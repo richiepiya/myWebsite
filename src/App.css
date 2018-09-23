@@ -17,6 +17,7 @@
   background-image: url("DesignAssets/Images/Logo-White.svg");
   background-repeat: no-repeat;
   background-size: contain;
+  z-index: 1;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -26,11 +27,12 @@
   position: absolute;
   top: 50%;
   right: 3vw;
-  width: 60vw;
+  width: 55vw;
   text-align: right;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   transform: translateY(-50%);
+  z-index: 1;
 }
 .tabContainer {
   padding: 0;
@@ -86,9 +88,11 @@
   transform: scaleX(1);
 }
 
+/*************** Content Containers ***************/
 .container-fluid {
   padding: 0;
 }
+
 /*************** Home Screen ***************/
 .homePageImg {
   width: 100vw;
@@ -130,7 +134,7 @@
   overflow: hidden;
   border-right: .15em solid orange;
   white-space: nowrap;
-  animation: typewriter 3.5s steps(30, end),
+  animation: typewriter 3.5s steps(10, end),
              blinkTextCursor 1s step-end infinite;
 }
 @keyframes typewriter{
@@ -140,4 +144,32 @@
 @keyframes blinkTextCursor{
   from, to { border-color: transparent }
   50% { border-color: orange; }
+}
+
+/*************** Home Screen ***************/
+.section-category {
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 40%;
+  background-color: black;
+}
+.section-info {
+  position: absolute;
+  display: block;
+  left: 40%;
+  height: 100%;
+  width: 60%;
+  background-color: red;
+}
+#test1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#test2 {
+  position: absolute;
+  top: 50%;
+  left: 20%;
 }
