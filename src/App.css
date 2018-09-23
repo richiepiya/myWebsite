@@ -1,0 +1,143 @@
+/*************** Header ***************/
+.myHeader {
+  position: absolute;
+  display: block;
+  height: 10vh;
+  width: 100%;
+  background-color: rgba(0,0,0,0);
+  color: white;
+}
+/* Logo */
+.logo {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 100%;
+  left: 3vw;
+  background-image: url("DesignAssets/Images/Logo-White.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/* Navigation Items */
+.navTabs {
+  position: absolute;
+  top: 50%;
+  right: 3vw;
+  width: 60vw;
+  text-align: right;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.tabContainer {
+  padding: 0;
+  margin: 0;
+}
+.tab, .tab-last {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 8%;
+}
+.tab-last {
+  margin: 0;
+}
+#home, #about, #work, #more, #contact {
+  position: relative;
+  font-size: 15px;
+  line-height: normal;
+  color: white;
+  font: bold 14px/1.4 'Open Sans', arial, sans-serif;
+  letter-spacing: 0.15em;
+  -webkit-transition:.4s ease-in-out;
+  -moz-transition:.4s ease-in-out;
+  transition:.4s ease-in-out;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* On Hover */
+#home:hover, #about:hover, #work:hover, #more:hover, #contact:hover {
+  -webkit-transition:.2s ease-in-out;
+  -moz-transition:.2s ease-in-out;
+  transition:.2s ease-in-out;
+}
+/* Underline Animation */
+#home:before, #about:before, #work:before, #more:before, #contact:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: orange;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+}
+#home:hover:before, #about:hover:before, #work:hover:before, #more:hover:before, #contact:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.container-fluid {
+  padding: 0;
+}
+/*************** Home Screen ***************/
+.homePageImg {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("DesignAssets/Images/ProfilePic.jpg");
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#myName {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  width: 60vw;
+  color: white;
+  font: bold 14px/1.4 'Open Sans', arial, sans-serif;
+  letter-spacing: 0.05em;
+  font-size: 60px;
+  text-align: left;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+#myInfo {
+  position: absolute;
+  top: 55%;
+  left: 5%;
+  color: white;
+  word-wrap: break-word;
+  font: bold 14px/1.4 'Open Sans', arial, sans-serif;
+  letter-spacing: 0.10em;
+  font-size: 24px;
+  text-align: left;
+}
+/* Typewriter Animation */
+.animateText{
+  overflow: hidden;
+  border-right: .15em solid orange;
+  white-space: nowrap;
+  animation: typewriter 3.5s steps(30, end),
+             blinkTextCursor 1s step-end infinite;
+}
+@keyframes typewriter{
+  from { width: 0; }
+  to { width: 24em; }
+}
+@keyframes blinkTextCursor{
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
