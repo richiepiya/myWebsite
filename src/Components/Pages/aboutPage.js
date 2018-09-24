@@ -24,7 +24,7 @@ class AboutPage extends Component {
   }
 }
 function fadeScroll() {
-  $(".fade-scroll").css("opacity", 1 - ($(".section-info").scrollTop())/150);
+  $(".fade-scroll").css("opacity", 1 - ($(".section-info").scrollTop())/100);
 }
 
 export default AboutPage;
