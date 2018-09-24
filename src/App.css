@@ -27,7 +27,7 @@
   position: absolute;
   top: 50%;
   right: 3vw;
-  width: 55vw;
+  width: 50vw;
   text-align: right;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
@@ -43,18 +43,19 @@
   padding: 0;
   list-style-type: none;
   display: inline-block;
-  margin-right: 8%;
+  margin-right: 7%;
 }
 .tab-last {
   margin: 0;
 }
+/* Items-white */
 #home, #about, #work, #more, #contact {
   position: relative;
   font-size: 15px;
   line-height: normal;
   color: white;
   font: bold 14px/1.4 'Open Sans', arial, sans-serif;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.10em;
   -webkit-transition:.4s ease-in-out;
   -moz-transition:.4s ease-in-out;
   transition:.4s ease-in-out;
@@ -79,10 +80,50 @@
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
-  -webkit-transition: all 0.2s ease-in-out 0s;
-  transition: all 0.2s ease-in-out 0s;
+  -webkit-transition: all 0.1s ease-in-out 0s;
+  transition: all 0.1s ease-in-out 0s;
 }
 #home:hover:before, #about:hover:before, #work:hover:before, #more:hover:before, #contact:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+/* Items-black */
+#home-b, #about-b, #work-b, #more-b, #contact-b {
+  position: relative;
+  font-size: 15px;
+  line-height: normal;
+  color: black;
+  font: bold 14px/1.4 'Open Sans', arial, sans-serif;
+  letter-spacing: 0.10em;
+  -webkit-transition:.4s ease-in-out;
+  -moz-transition:.4s ease-in-out;
+  transition:.4s ease-in-out;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* On Hover */
+#home-b:hover, #about-b:hover, #work-b:hover, #more-b:hover, #contact-b:hover {
+  -webkit-transition:.2s ease-in-out;
+  -moz-transition:.2s ease-in-out;
+  transition:.2s ease-in-out;
+}
+/* Underline Animation */
+#home-b:before, #about-b:before, #work-b:before, #more-b:before, #contact-b:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: orange;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.1s ease-in-out 0s;
+  transition: all 0.1s ease-in-out 0s;
+}
+#home-b:hover:before, #about-b:hover:before, #work-b:hover:before, #more-b:hover:before, #contact-b:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
@@ -106,7 +147,7 @@
 }
 #myName {
   position: absolute;
-  top: 50%;
+  top: 48%;
   left: 35%;
   width: 60vw;
   color: white;
@@ -122,15 +163,15 @@
   position: absolute;
   top: 55%;
   left: 5%;
-  color: white;
-  word-wrap: break-word;
+  color: orange;
+  overflow-wrap: break-word;
   font: bold 14px/1.4 'Open Sans', arial, sans-serif;
   letter-spacing: 0.10em;
   font-size: 24px;
   text-align: left;
 }
 /* Typewriter Animation */
-.animateText{
+/*.animateText{
   overflow: hidden;
   border-right: .15em solid orange;
   white-space: nowrap;
@@ -144,32 +185,64 @@
 @keyframes blinkTextCursor{
   from, to { border-color: transparent }
   50% { border-color: orange; }
-}
+}*/
 
-/*************** Home Screen ***************/
+/*************** Sections for Screens ***************/
 .section-category {
   position: absolute;
   display: block;
   height: 100%;
-  width: 40%;
-  background-color: black;
+  width: 45%;
 }
 .section-info {
   position: absolute;
   display: block;
-  left: 40%;
+  left: 45%;
   height: 100%;
-  width: 60%;
-  background-color: red;
+  width: 55%;
+  background-color: white;
+  overflow: scroll;
 }
-#test1 {
+
+/*************** About Screen ***************/
+.aboutPageImg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("DesignAssets/Images/AboutPic.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#aboutImg {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  color: white;
 }
-#test2 {
+#aboutContainer {
   position: absolute;
+  width: 70%;
+  max-height: 75%;
   top: 50%;
-  left: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#aboutTitle {
+  font: bold 'Open Sans', arial, sans-serif;
+  letter-spacing: 0.10em;
+}
+#aboutContent {
+  font: 16px/1.4 'Open Sans', arial, sans-serif;
+  padding-bottom: 10%;
+}
+
+/*************** Work Screen ***************/
+.workPageImg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("DesignAssets/Images/WorkPic.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }

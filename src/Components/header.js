@@ -12,19 +12,19 @@ class Header extends Component {
         <nav className="navTabs">
           <ul className="tabContainer">
             <li className="tab">
-              <Link to="/" id="home">HOME</Link>
+              <Link to="/" onClick={clickedHome} id={curPage==="home" ? "home":"home-b"}>HOME</Link>
             </li>
             <li className="tab">
-              <Link to="/about" id="about">ABOUT</Link>
+              <Link to="/about" onClick={clickedAbout} id={curPage==="home" ? "about":"about-b"}>ABOUT</Link>
             </li>
             <li className="tab">
-              <Link to="/work" id="work">WORK</Link>
+              <Link to="/work" onClick={clickedWork} id={curPage==="home" ? "work":"work-b"}>WORK</Link>
             </li>
             <li className="tab">
-              <Link to="/more" id="more">MORE</Link>
+              <Link to="/more" onClick={clickedMore} id={curPage==="home" ? "more":"more-b"}>MORE</Link>
             </li>
             <li className="tab-last">
-              <Link to="/contact" id="contact">CONTACT</Link>
+              <Link to="/contact" onClick={clickedContact} id={curPage==="home" ? "contact":"contact-b"}>CONTACT</Link>
             </li>
           </ul>
         </nav>
@@ -33,5 +33,11 @@ class Header extends Component {
     );
   }
 }
+var curPage = "home";
+function clickedHome() { curPage = "home"; }
+function clickedAbout() { curPage = "about"; }
+function clickedWork() { curPage = "work"; }
+function clickedMore() { curPage = "more"; }
+function clickedContact() { curPage = "contact"; }
 
 export default Header;
