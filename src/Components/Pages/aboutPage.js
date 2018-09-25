@@ -8,7 +8,7 @@ class AboutPage extends Component {
 
         <div className="section-category">
           <div className="aboutPageImg"></div>
-          <div id="aboutImg">sample text 1</div>
+          <div id="aboutImg"></div>
         </div>
 
         <div className="section-info" onScroll={fadeScroll}>

@@ -170,24 +170,8 @@
   font-size: 24px;
   text-align: left;
 }
-/* Typewriter Animation */
-/*.animateText{
-  overflow: hidden;
-  border-right: .15em solid orange;
-  white-space: nowrap;
-  animation: typewriter 3.5s steps(10, end),
-             blinkTextCursor 1s step-end infinite;
-}
-@keyframes typewriter{
-  from { width: 0; }
-  to { width: 24em; }
-}
-@keyframes blinkTextCursor{
-  from, to { border-color: transparent }
-  50% { border-color: orange; }
-}*/
 
-/*************** Sections for Screens ***************/
+/*************** Split Sections for Screens ***************/
 .section-category {
   position: absolute;
   display: block;
@@ -209,22 +193,35 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("DesignAssets/Images/AboutPic.png");
+  background-image: url("DesignAssets/Images/AboutPic.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 #aboutImg {
   position: absolute;
+  display: block;
   top: 50%;
   left: 50%;
+  width: 40vw;
+  height: 40vh;
   transform: translate(-50%, -50%);
-  color: white;
+  z-index: 1;
+  background-image: url("DesignAssets/Images/about-logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  /* Safari 4.0-8.0 */
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: 1.5s;
+  /* Other browsers */
+  animation-name: fadeIn;
+  animation-duration: 1.5s;
 }
 #aboutContainer {
   position: absolute;
   width: 70%;
-  max-height: 75%;
-  top: 50%;
+  max-height: 70%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -242,7 +239,99 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("DesignAssets/Images/WorkPic.jpg");
+  background-image: url("DesignAssets/Images/WorkPic.png");
   background-repeat: no-repeat;
   background-size: cover;
+}
+#workImg {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  width: 40vw;
+  height: 40vh;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  background-image: url("DesignAssets/Images/work-logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  /* Safari 4.0-8.0 */
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: 1.5s;
+  /* Other browsers */
+  animation-name: fadeIn;
+  animation-duration: 1.5s;
+}
+#workContainer {
+  position: absolute;
+  width: 70%;
+  max-height: 75%;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#workTitle {
+  font: bold 'Open Sans', arial, sans-serif;
+  letter-spacing: 0.10em;
+}
+#workContent {
+  font: 16px/1.4 'Open Sans', arial, sans-serif;
+  padding-bottom: 10%;
+}
+
+/*************** More Screen ***************/
+.morePageImg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("DesignAssets/Images/MorePic.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#moreImg {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  width: 40vw;
+  height: 40vh;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  background-image: url("DesignAssets/Images/more-logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  /* Safari 4.0-8.0 */
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: 1.5s;
+  /* Other browsers */
+  animation-name: fadeIn;
+  animation-duration: 1.5s;
+}
+#moreContainer {
+  position: absolute;
+  width: 70%;
+  max-height: 75%;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#moreTitle {
+  font: bold 'Open Sans', arial, sans-serif;
+  letter-spacing: 0.10em;
+}
+#moreContent {
+  font: 16px/1.4 'Open Sans', arial, sans-serif;
+  padding-bottom: 10%;
+}
+
+/*************** Fade In Animation ***************/
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
