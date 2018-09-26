@@ -228,10 +228,19 @@
 #aboutTitle {
   font: bold 'Open Sans', arial, sans-serif;
   letter-spacing: 0.10em;
+  font-size: 26px;
 }
 #aboutContent {
   font: 16px/1.4 'Open Sans', arial, sans-serif;
   padding-bottom: 10%;
+}
+#subjectHeader {
+  font: bold 'Open Sans', arial, sans-serif;
+  letter-spacing: 0.10em;
+  font-size: 20px;
+}
+#subjectLineAbout {
+  border-top: 3px solid #EE3D3B;
 }
 
 /*************** Work Screen ***************/
@@ -274,10 +283,14 @@
 #workTitle {
   font: bold 'Open Sans', arial, sans-serif;
   letter-spacing: 0.10em;
+  font-size: 30px;
 }
 #workContent {
   font: 16px/1.4 'Open Sans', arial, sans-serif;
   padding-bottom: 10%;
+}
+#subjectLineWork {
+  border-top: 3px solid #364D96;
 }
 
 /*************** More Screen ***************/
