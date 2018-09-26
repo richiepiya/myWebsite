@@ -13,7 +13,7 @@ class AboutPage extends Component {
 
         <div className="section-info" onScroll={fadeScroll}>
           <div id="aboutContainer">
-            <div id="subjectHeader">Hello! My name is Richie.</div>
+            <div className="fade-scroll" id="subjectHeader">Hello! My name is Richie.</div>
             <div className="fade-scroll" id="aboutTitle"><strong>I’m a developer and designer from Toronto living in Montreal.</strong></div>
             <hr id="subjectLineAbout"></hr>
 

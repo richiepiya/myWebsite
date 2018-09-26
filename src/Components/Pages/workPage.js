@@ -26,8 +26,9 @@ class WorkPage extends Component {
                 <br /><br />
                 My tasks
                 <ul>
-                  <li>Developed responsive features that integrated data from the City of Toronto with the Google Maps API</li>
+                  <li>Developed features that integrated data from the City of Toronto with the Google Maps API</li>
                   <li>Collaborated with designer to create website UI/UX</li>
+                  <li>Developed responsive family-friendly interface</li>
                   <li>Conducted market research to identify and analyze user needs</li>
                 </ul>
               </div>
@@ -38,7 +39,11 @@ class WorkPage extends Component {
 
               <div id="subjectHeader"><strong>THE SOLUTION</strong></div>
               <br />
-              <div id="workContent">The solution we came up with was Relevent. A hyperlocal community event finder, personalized to each user's lifestyle. By finding events in an area, Relevent helps users explore the community and understand what life could be like there.</div>
+              <div id="workContentLast">The solution we came up with was Relevent. A hyperlocal community event finder, personalized to each user's lifestyle. By finding events in an area, Relevent helps users explore the community and understand what life could be like there.</div>
+
+              <div id="imgContainer">
+                <div id="releventImg"></div>
+              </div>
             </div>
           </div>
         </div>
