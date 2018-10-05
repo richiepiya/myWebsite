@@ -1,6 +1,6 @@
 ## Personal Website
 
-[Click here](https://www.google.com) to view webapp. Built using React.
+Built using React.
 
 To run the application...
 - node and npm must be installed (if they are not, run the command "npm install")
