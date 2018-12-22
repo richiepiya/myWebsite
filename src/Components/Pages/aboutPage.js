@@ -18,7 +18,7 @@ class AboutPage extends Component {
             <hr id="subjectLineAbout"></hr>
 
             <br />
-            <p id="aboutContent">I’m currently in my last semester of Computer Engineering at McGill University. I’ve previously interned at RBC’s Amplify program and at Pratt & Whitney Canada where I built exciting webapps for internal and external clients. I love creating awesome interfaces and working on personal projects to solve real life problems. In my free time, I enjoy playing the violin and the piano, travelling the world, and finding great deals on eBay. If you’re working on a cool application and need a developer, please feel free to contact me!</p>
+            <p id="aboutContent">I’m currently in my last semester of Computer Engineering at McGill University. I’ve previously interned at RBC’s Amplify program and at Pratt & Whitney Canada where I built exciting webapps for internal and external clients. I love creating awesome interfaces and working on personal projects to solve real life problems. In my free time, I enjoy playing the violin and the piano, travelling the world, and finding great deals on eBay!</p>
           </div>
         </div>
 
